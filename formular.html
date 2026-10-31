@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Uk?zka b??n?ch HTML formul??ov?ch prvk? a typ? vstup?.">
-        <title>Uk?zka formul???</title>
+        <meta name="description" content="Ukázka běžných HTML formulářových prvků a typů vstupů.">
+        <title>Ukázka formulářů</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="form-demo-page">
@@ -20,23 +20,23 @@
             </nav>
         </header>
         <main class="form-demo-content">
-            <h1>Uk?zka formul??ov?ch prvk?</h1>
+            <h1>Ukázka formulářových prvků</h1>
             <p>
-                P?ehled r?zn?ch typ? HTML vstup?, v?b?r? a tla??tek.
-                Formul?? slou?? pouze jako uk?zka.
+                Přehled různých typů HTML vstupů, výběrů a tlačítek.
+                Formulář slouží pouze jako ukázka.
             </p>
 
             <form action="#" method="get">
                 <fieldset>
-                    <legend>Textov? a ??seln? ?daje</legend>
+                    <legend>Textové a číselné údaje</legend>
                     <div class="form-grid">
                         <div class="form-field">
-                            <label for="full-name">Jm?no a p??jmen?</label>
-                            <input id="full-name" name="name" type="text" placeholder="Jan Nov?k">
+                            <label for="full-name">Jméno a příjmení</label>
+                            <input id="full-name" name="name" type="text" placeholder="Jan Novák">
                         </div>
                         <div class="form-field">
-                            <label for="search">Vyhled?v?n?</label>
-                            <input id="search" name="search" type="search" placeholder="Hledan? v?raz">
+                            <label for="search">Vyhledávání</label>
+                            <input id="search" name="search" type="search" placeholder="Hledaný výraz">
                         </div>
                         <div class="form-field">
                             <label for="email">E-mail</label>
@@ -51,74 +51,74 @@
                             <input id="phone" name="phone" type="tel" placeholder="+420 123 456 789">
                         </div>
                         <div class="form-field">
-                            <label for="website">Webov? adresa</label>
+                            <label for="website">Webová adresa</label>
                             <input id="website" name="website" type="url" placeholder="https://example.com">
                         </div>
                         <div class="form-field">
-                            <label for="quantity">Po?et kus?</label>
+                            <label for="quantity">Počet kusů</label>
                             <input id="quantity" name="quantity" type="number" min="0" max="100" value="1">
                         </div>
                         <div class="form-field">
-                            <label for="satisfaction">Spokojenost (1?10)</label>
+                            <label for="satisfaction">Spokojenost (1–10)</label>
                             <input id="satisfaction" name="satisfaction" type="range" min="1" max="10" value="5">
                         </div>
                     </div>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Datum, ?as a barva</legend>
+                    <legend>Datum, čas a barva</legend>
                     <div class="form-grid">
                         <div class="form-field">
                             <label for="date">Datum</label>
                             <input id="date" name="date" type="date">
                         </div>
                         <div class="form-field">
-                            <label for="time">?as</label>
+                            <label for="time">Čas</label>
                             <input id="time" name="time" type="time">
                         </div>
                         <div class="form-field">
-                            <label for="appointment">Datum a ?as</label>
+                            <label for="appointment">Datum a čas</label>
                             <input id="appointment" name="appointment" type="datetime-local">
                         </div>
                         <div class="form-field">
-                            <label for="month">M?s?c</label>
+                            <label for="month">Měsíc</label>
                             <input id="month" name="month" type="month">
                         </div>
                         <div class="form-field">
-                            <label for="week">T?den</label>
+                            <label for="week">Týden</label>
                             <input id="week" name="week" type="week">
                         </div>
                         <div class="form-field">
-                            <label for="color">Obl?ben? barva</label>
+                            <label for="color">Oblíbená barva</label>
                             <input id="color" name="color" type="color" value="#4285f4">
                         </div>
                     </div>
                 </fieldset>
 
                 <fieldset>
-                    <legend>V?b?r mo?nost?</legend>
+                    <legend>Výběr možností</legend>
                     <div class="form-grid">
                         <div class="form-field">
-                            <label for="country">Zem?</label>
+                            <label for="country">Země</label>
                             <select id="country" name="country">
                                 <option value="">Vyberte zemi</option>
-                                <option value="cz">?esk? republika</option>
+                                <option value="cz">Česká republika</option>
                                 <option value="sk">Slovensko</option>
-                                <option value="other">Jin?</option>
+                                <option value="other">Jiná</option>
                             </select>
                         </div>
                         <div class="form-field">
-                            <label for="topics">T?mata (lze vybrat v?ce)</label>
+                            <label for="topics">Témata (lze vybrat více)</label>
                             <select id="topics" name="topics" multiple size="4">
                                 <option value="technology">Technologie</option>
-                                <option value="science">V?da</option>
+                                <option value="science">Věda</option>
                                 <option value="culture">Kultura</option>
-                                <option value="travel">Cestov?n?</option>
+                                <option value="travel">Cestování</option>
                             </select>
                         </div>
                         <div class="form-field">
-                            <label for="browser">Obl?ben? prohl??e?</label>
-                            <input id="browser" name="browser" list="browsers" placeholder="Za?n?te ps?t">
+                            <label for="browser">Oblíbený prohlížeč</label>
+                            <input id="browser" name="browser" list="browsers" placeholder="Začněte psát">
                             <datalist id="browsers">
                                 <option value="Chrome">
                                 <option value="Firefox">
@@ -129,43 +129,43 @@
                     </div>
 
                     <div class="choice-group">
-                        <p class="choice-title">Preferovan? zp?sob kontaktu</p>
+                        <p class="choice-title">Preferovaný způsob kontaktu</p>
                         <label><input type="radio" name="contact" value="email"> E-mail</label>
                         <label><input type="radio" name="contact" value="phone"> Telefon</label>
-                        <label><input type="radio" name="contact" value="none"> ??dn?</label>
+                        <label><input type="radio" name="contact" value="none"> Žádný</label>
                     </div>
                     <div class="choice-group">
-                        <p class="choice-title">Souhlasy a ozn?men?</p>
-                        <label><input type="checkbox" name="terms" value="yes"> Souhlas?m s podm?nkami</label>
-                        <label><input type="checkbox" name="newsletter" value="yes"> Chci dost?vat novinky</label>
+                        <p class="choice-title">Souhlasy a oznámení</p>
+                        <label><input type="checkbox" name="terms" value="yes"> Souhlasím s podmínkami</label>
+                        <label><input type="checkbox" name="newsletter" value="yes"> Chci dostávat novinky</label>
                     </div>
                 </fieldset>
 
                 <fieldset>
-                    <legend>P??loha a zpr?va</legend>
+                    <legend>Příloha a zpráva</legend>
                     <div class="form-grid">
                         <div class="form-field">
-                            <label for="attachment">Nahr?t soubor</label>
+                            <label for="attachment">Nahrát soubor</label>
                             <input id="attachment" name="attachment" type="file">
                         </div>
                         <div class="form-field">
-                            <label for="message">Text zpr?vy</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Napi?te svou zpr?vu?"></textarea>
+                            <label for="message">Text zprávy</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Napište svou zprávu…"></textarea>
                         </div>
                     </div>
                     <input type="hidden" name="form-version" value="demo">
                 </fieldset>
 
                 <div class="form-actions">
-                    <button type="submit">Odeslat uk?zku</button>
-                    <button type="reset">Vymazat formul??</button>
-                    <button type="button">Oby?ejn? tla??tko</button>
+                    <button type="submit">Odeslat ukázku</button>
+                    <button type="reset">Vymazat formulář</button>
+                    <button type="button">Obyčejné tlačítko</button>
                 </div>
             </form>
         </main>
         <footer class="site-footer">
             <nav aria-label="Project links">
-                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhrickova.github.io%2Fgooglesearch%2Fformular.html">Validate HTML</a>
+                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fraw.githubusercontent.com%2FDhrickova%2Fgooglesearch%2Fmain%2Fformular.html">Validate HTML</a>
                 <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdhrickova.github.io%2Fgooglesearch%2Fstyle.css">Validate CSS</a>
                 <a href="https://github.com/Dhrickova/googlesearch/blob/main/citace.md">Sources and citations</a>
                 <a href="https://dhrickova.github.io/dalsiportfolio.html">Portfolio</a>
