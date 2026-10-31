@@ -36,12 +36,15 @@ a:hover {
 }
 
 .home-page {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
 .home-content {
     display: flex;
     width: 100%;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     margin: 105px auto 0;
@@ -236,14 +239,189 @@ button:focus-visible {
     border: 0;
 }
 
+.site-footer {
+    width: 100%;
+    padding: 18px 28px;
+    border-top: 1px solid #ebebeb;
+}
+
+.site-footer nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+}
+
+.site-footer a {
+    color: #5f6368;
+    font-size: 13px;
+}
+
+.form-demo-page {
+    min-height: 100vh;
+}
+
+.form-demo-content {
+    width: min(100% - 48px, 900px);
+    margin: 36px auto 48px;
+}
+
+.form-demo-content h1 {
+    margin: 0 0 8px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.form-demo-content > p {
+    margin: 0 0 28px;
+    color: #5f6368;
+}
+
+.form-demo-content fieldset {
+    min-width: 0;
+    margin: 0 0 22px;
+    padding: 20px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+}
+
+.form-demo-content legend {
+    padding: 0 8px;
+    color: #3c4043;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 22px;
+}
+
+.form-field {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-field label,
+.choice-title {
+    font-weight: 600;
+}
+
+.form-field input:not([type="checkbox"]):not([type="radio"]),
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    min-height: 38px;
+    padding: 8px 10px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    background: #fff;
+    color: #202124;
+    font: inherit;
+}
+
+.form-field input[type="range"],
+.form-field input[type="color"],
+.form-field input[type="file"] {
+    min-height: 38px;
+}
+
+.form-field input[type="color"] {
+    width: 64px;
+    padding: 4px;
+}
+
+.form-field select[multiple] {
+    min-height: 104px;
+}
+
+.form-field textarea {
+    resize: vertical;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: #4285f4;
+    outline: 1px solid #4285f4;
+}
+
+.choice-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    margin-top: 20px;
+}
+
+.choice-title {
+    width: 100%;
+    margin: 0;
+}
+
+.choice-group label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.citation-page {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 32px 24px 0;
+    line-height: 1.6;
+}
+
+.citation-page h1,
+.citation-page h2 {
+    line-height: 1.25;
+}
+
+.citation-page blockquote {
+    margin: 16px 0;
+    padding: 12px 20px;
+    border-left: 4px solid #4285f4;
+    background: #f8f9fa;
+    overflow-wrap: anywhere;
+}
+
+.citation-page .back-link {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: #1a73e8;
+}
+
+.citation-page .site-footer {
+    margin-top: 32px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
 @media (max-width: 600px) {
     .top-bar {
+        flex-wrap: wrap;
+        justify-content: space-between;
         padding-right: 18px;
         padding-left: 18px;
     }
 
     .top-bar nav {
+        flex-wrap: wrap;
+        justify-content: flex-end;
         gap: 16px;
+    }
+
+    .site-footer {
+        padding-right: 18px;
+        padding-left: 18px;
     }
 
     .home-content {
@@ -263,5 +441,18 @@ button:focus-visible {
         grid-template-columns: 1fr;
         gap: 8px;
         margin-bottom: 16px;
+    }
+
+    .form-demo-content {
+        width: calc(100% - 36px);
+        margin-top: 28px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-demo-content fieldset {
+        padding: 16px;
     }
 }
