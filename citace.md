@@ -13,8 +13,6 @@
 
 > přidej tam - citaci AI, ve formě webu, když na to kliknu, tak se mi to objeví na webové stránce githubu https://github.com/Dhrickova/Dhrickova.github.iovšechno co zde v chatru bylo napsáno (musíš použít i AI k vygenerování citace, chci vědět použitý model, prompty, výstupy)
 
-Toto zadání je zaznamenané také na stránce [Citace AI](./ai-citace.html).
-
 ### Aktuální prompt
 
 > 1. Vytvořte další stránku v rámci výše uvedeného projektu, která bude obsahovat co největší množství formulářových prvků (input, select, checkbox, radio, textarea, button, …). Formulářové prvky nemusí být funkční. Cílem je ukázat, že umíte vytvořit různé typy formulářů.
